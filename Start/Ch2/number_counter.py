@@ -3,19 +3,17 @@
 
 def count_numbers(which, numbers):
     # Your code goes here
-    counter = 0;
-    if which == "even":
-        for num in numbers:
-           if num % 2 == 0:
-                counter+=1
-        return counter
-    elif which =="odd":
-        for num in numbers:
-            if num % 2 != 0:
-                counter += 1
-        return counter
-    
-    return -1
+    counter = 0
+    if which != "even" and which != "odd":
+        return -1
+    for num in numbers:
+        if which == "even" and num % 2 == 0:
+            counter+=1
+        
+        if which =="odd" and num % 2 != 0:
+            counter += 1
+    return counter
+
 
 # This is how your code will be called.
 # You can edit this code to try different testing cases.
@@ -26,4 +24,4 @@ print("even numbers:", result1)
 result2 = count_numbers("odd", numbers)
 print("odd numbers:", result2)
 result3 = count_numbers("Blarg", numbers)
-print("invalid word:", result3)
+print("invalid type input:", result3)
