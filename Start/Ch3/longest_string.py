@@ -4,14 +4,14 @@
 show_expected_result = False
 show_hints = False
 
-def find_largest(numbers):
+def find_largest(stringList):
     # Your code goes here
-    length = 0;
-    for str in numbers:
-        if length < len(str):
-            length = len(str)
+    maxLen = 0
+    for str in stringList:
+        if maxLen < len(str):
+            maxLen = len(str)
 
-    return length
+    return maxLen
 
 # This is how your code will be called.
 # Your answer should be the length of the longest string in the list
@@ -23,4 +23,4 @@ test_strings = [
     "Life moves pretty fast. If you don’t stop and look around once in a while, you could miss it."
 ]
 result = find_largest(test_strings)
-print("the longest string has a length of", result)
+print(f"the longest string has a length of {result} chars")
