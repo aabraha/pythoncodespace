@@ -23,6 +23,7 @@ today = datetime.now()
 print("Today's date and time is", today)
 
 # Get the current time
-#time = datetime.time(datetime.now())
-time = datetime.time(today)
-print("The current time is", time)
+time1 = datetime.time(datetime.now())
+time2 = datetime.time(today)
+print("The current time is", time1)
+print("The current time is", time2)
