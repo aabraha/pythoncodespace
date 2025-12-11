@@ -19,11 +19,11 @@ print("Which is ", days[today.weekday()])
 
 ## DATETIME OBJECTS
 # Get today's date from the datetime class
-today = datetime.now()
-print("Today's date and time is", today)
+todayDateAndTime = datetime.now()
+print("Today's date and time is", todayDateAndTime)
 
 # Get the current time
 time1 = datetime.time(datetime.now())
-time2 = datetime.time(today)
+time2 = datetime.time(todayDateAndTime)
 print("The current time is", time1)
 print("The current time is", time2)
