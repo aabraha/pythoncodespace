@@ -39,7 +39,7 @@ for dayName in calendar.day_name:
 # a team meeting on the first Friday of every month.
 # To figure out what days that would be for each month,
 # we can use this script:
-print("Team meetings will be on:")
+print("########## Team meetings of the year will be on: ##############")
 for month in range(1,13):
   listWeek = calendar.monthcalendar(2026,month)
   weekOne = listWeek[0]
@@ -50,4 +50,4 @@ for month in range(1,13):
   else:
     meetingDay = weekTwo[calendar.FRIDAY]
 
-  print(f"{calendar.month_name[month]} : {meetingDay}")
+  print(f"{calendar.month_name[month]} : {meetingDay} {calendar.day_name[calendar.FRIDAY]} ")
