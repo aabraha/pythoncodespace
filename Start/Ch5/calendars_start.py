@@ -41,7 +41,7 @@ for dayName in calendar.day_name:
 # we can use this script:
 print("########## Team meetings of the year will be on: ##############")
 for month in range(1,13):
-  listWeek = calendar.monthcalendar(2026,month)
+  listWeek = calendar.monthcalendar(2026,month) #For every month get a list of week
   weekOne = listWeek[0]
   weekTwo = listWeek[1]
 
